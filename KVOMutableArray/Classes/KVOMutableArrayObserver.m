@@ -52,7 +52,7 @@
 #pragma mark - Mutable Indexed Accessors
 - (void)replaceObjectInArrAtIndex:(NSUInteger)index withObject:(id)obj
 {
-    (self.arr)[index] = obj;
+    [self.arr replaceObjectAtIndex:index withObject:obj];
 }
 
 - (void)replaceArrAtIndexes:(NSIndexSet*)indexes withArr:(NSArray*)array
